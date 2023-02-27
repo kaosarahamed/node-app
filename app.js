@@ -3,7 +3,7 @@ const app = express();
 const cors = require("cors");
 const userRoutes = require("./Routes/UserRoutes");
 const path = require("path");
-
+require("./Config/DatabaseConnection");
 app.use(express.json());
 app.use(cors());
 app.use(express.urlencoded({ extended: true }));
